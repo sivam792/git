@@ -1,0 +1,118 @@
+⭐ Git Commands — Explained
+📌 Basic Commands
+git init
+git init
+# why? → To create a new local Git repository in your project folder.
+
+git status
+git status
+# why? → To check which files are tracked, untracked, staged, or modified.
+
+git add
+git add filename
+# why? → To move a file to staging so it is ready to commit.
+
+git add .
+git add .
+# why? → To stage ALL modified/untracked files at once.
+
+git commit
+git commit -m "message"
+# why? → To save your changes permanently inside the repository history.
+
+📌 Viewing History
+git log
+git log
+# why? → To see the full commit history.
+
+git log --oneline
+git log --oneline
+# why? → To view a short, clean version of commit history.
+
+git show
+git show <commit-id>
+# why? → To see what exactly changed in a specific commit.
+
+📌 Configure Git
+User Configuration
+git config user.name "Mahesh"
+# why? → To set the name that appears on your commits.
+
+git config user.email "your@email"
+# why? → Git needs your email to record author information.
+
+📌 .gitignore
+vim .gitignore
+# why? → To tell Git which files/folders to ignore (logs, temp files, secrets).
+
+📌 Untracking Files
+git rm --cached filename
+# why? → To stop tracking a file without deleting it from your system.
+
+📌 Reset Commands
+Soft Reset
+git reset --soft HEAD~1
+# why? → Undo the last commit but KEEP your changes in staging.
+
+Hard Reset
+git reset --hard HEAD~1
+# why? → Undo the last commit and DELETE changes permanently.
+
+Reflog
+git reflog
+# why? → To find deleted commit IDs or recover lost commits.
+
+📌 Revert
+git revert <commit-id>
+# why? → Safely undo a commit by creating a NEW commit (used in teams).
+
+📌 Branching
+git branch dev
+# why? → To create a new branch.
+
+git checkout dev
+# why? → To switch to the dev branch.
+
+git checkout -b dev
+# why? → To create AND switch to a new branch in one command.
+
+git branch -d dev
+# why? → To delete a branch safely.
+
+git branch -D dev
+# why? → Force delete a branch (even if changes are not merged).
+
+git branch -m old new
+# why? → To rename a branch.
+
+📌 Merge
+git checkout master
+# why? → You must be on the branch where you want to merge.
+
+git merge dev
+# why? → To bring changes from dev branch into master.
+
+📌 Stash
+git stash
+# why? → To temporarily save changes without committing.
+
+git stash list
+# why? → To view saved stashes.
+
+git stash apply
+# why? → To reapply stashed changes.
+
+git stash clear
+# why? → To remove all stashes.
+
+📌 Cherry-pick
+git cherry-pick <commit-id>
+# why? → To copy one specific commit from another branch.
+
+📌 Amend
+git commit --amend -m "new message"
+# why? → To modify the last commit or fix its message.
+
+📌 Restore
+git restore filename
+# why? → To discard local changes and restore file from last commit.
