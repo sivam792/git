@@ -127,6 +127,6 @@ git branch -m oldname newname
 📌 Merging Branches
 git checkout master
 git merge dev
-
+#adding some data on it
 
 
